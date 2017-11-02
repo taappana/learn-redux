@@ -12,9 +12,6 @@ import { sentry_url, logException } from './data/config';;
 
 Raven.config(sentry_url).install();
 
-Raven.captureMessage('Something bad happened!');
-Raven.showReportDialog();
-
 const router = (
   <Provider store={store}>
     <Router history={history}>
